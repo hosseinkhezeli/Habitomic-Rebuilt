@@ -49,14 +49,23 @@ body{
         margin-right: 10px;
         
     }
-    header li span a{
-        border-bottom: 2px solid #17d789 ;
-        padding-bottom: 30px;
-        color: #17d789;
-    }
 
+    header li:nth-child(-n+3) a{
+      border-bottom: 3px solid rgba(23,215,105,0) ;
+      padding-bottom: 30px;
+    }
+    header li span {
+      border-bottom: 3px solid rgba(23,215,105,1) ;
+      padding-bottom: 30px;
+      color: #17d789;
+  }
+    header li span a {
+    color: #17d789;
+    margin-right: 0px;
+    padding: 0px 10px;
+  }
     header li:nth-child(2) {
-      margin-right: 0px;
+      margin-right: 10px;
       padding-right: 0px;
         }
       
@@ -80,10 +89,11 @@ body{
       
       header li:nth-child(-n+3) a:hover {
         color: #17d789;
-        border-bottom: 2px solid #17d789 ;
+        border-bottom: 3px solid rgba(23,215,105,1) ;
       }
       header li:nth-child(-n+3) a{
         transition:  color ease-out 0.5s;
+        transition:  border-bottom  ease 0.5s;
       }
 
 
