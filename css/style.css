@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body{
-    background-image: url("https://github.com/hosseinkhezeli/Habitomic-Rebuilt/blob/bd947848c6b0375014ffe03051107050f5a2a602/images/Mask-group.svg");
+    background-image: url("../images/Mask-group.svg");
     background-repeat: no-repeat;
     background-color: #f7f7f7;
     background-size: 100vw;
