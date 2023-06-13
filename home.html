@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap&family=Poppins:wght@200;300;400;500;600;700;800&display=swap&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/cycle2.js"></script>
+        <script>function myFunction(x) {x.classList.toggle("change");}</script>
+        <script>$(function() {
+            $(".toggle").on("click",function(){
+                if($("nav ul").hasClass("active")){
+                    $("nav ul").removeClass("active");
+                }else{
+                    $("nav ul").addClass("active");
+                }
+            });
+        });</script>
+         </script>
+         <script>
+            function myFunction(x) {
+              if (x.matches) { // If media query matches
+                $('.cycle-slideshow').cycle('pause');
+                $('.cycle-slideshow').cycle('stop');
+              } else {
+                $('.cycle-slideshow').cycle('resume');
+              }
+            }
+            $('.cycle-slideshow').cycle('resume');
+            var x = window.matchMedia("(max-width: 768px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
+            </script>
+           </head>
+    <body>
+        <header>
+            <ul>
+                <li>
+                    <a href="https://habitomic.com/"><img src="images/1401-03-21-Logo-Final-06_Green-1.svg"></a>
+                </li>
+                <li>
+                    <span><a href="#">Home</a></span>
+                </li>
+                <li>
+                    <a href="https://habitomic.com/blog/">Blog</a>
+                </li>
+
+                <li>
+                    <a href="https://habitomic.com/features/">Download the app</a>
+                </li>
+            </ul>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href="https://habitomic.com/"><img src="images/1401-03-21-Logo-Final-06_Green-1.svg"></a>
+            </div>
+            <ul>
+                <li class="item">
+                    <span><a href="#">Home</a></span>
+                </li>
+                <li class="item">
+                    <a href="https://habitomic.com/blog/">Blog</a>
+                </li>
+
+                <li class="item">
+                    <a href="https://habitomic.com/features/">Features</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <span class="bars"onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  </div></span>
+                </div>
+        </nav>
+        <div class="mainData">
+            <div class="mainBanner">
+                <div class="backgroundBanner">
+                    <img src="images/header-mobile-bg.png">
+                </div>
+                <div class="mockupBanner">
+                    <img src="images/mockup.png">
+                </div>
+                <div class="textBanner">
+                    <h2>Why Habitomic?</h2>
+                    <div class="subHeader">We help you find and form the best habit based on your personality type.</div>
+                    <div class="ctaText">Let’s make a new journey together.</div>
+                    <div class="ctaLinks">
+                        <a class="apple"href="https://apps.apple.com/ca/app/habitomic/id1609261995?platform=iphone"><img src="images/App-Store.svg"></a>
+                        <a class="google"href="https://play.google.com/store/apps/details?id=com.habitomic.android"><img src="images/available-on-the-google-store.svg"></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="secondScope">
+                <div class="sSHeader">Habit Formation Journey</div>
+                <div class="sSContext">
+                    <div class="sSFeature"><img src="images/feature-1.png"><span>Personality Type is the Key</span><p>No two people are alike; people have different needs and desires. Here, the communication is based on your personality type determined by psychometric tools.</p></div>
+                    <div class="sSFeature"><img src="images/feature-2.png"><span>Evaluate your habit</span><p>Psychometric test can help you find out whether the habit is what you need. Of course, If the habit suits you, you are more likely to stick to it.</p></div>
+                    <div class="sSFeature"><img src="images/feature-3.png"><span>Find your starting point</span><p>Start your journey by breaking down your selected habit to minihabits, daily routines that just take a few minutes. Minihabits build up a new habit step by step.</p></div>
+                </div>
+            </div>
+            <div class="thirdScope">
+                <div class="tSImage"><img src="images/meitis.png"><div class="tSImageBg"><img src="images/meitis-bg.png"></div></div>
+                <div class="tSContext">
+                    <div class="tSTitle">MEITIS HELPS YOU</div>
+                    <div class="tSStatement">Hi I’m Metis</br>Your personal Assistant</div>
+                    <div class="tSDescription">I'm with you on your journey, Sometimes we solve the problems, sometimes you let me know what you need and sometimes I introduce your peers to you.</div>
+                </div>
+            </div>
+            <div class="Slideshow">
+                <div class="slideshowHeader">Reviews</div>
+                <span class="cycle-prev"><a href=# id=prev><i class="material-icons" style="font-size:60px">chevron_left</i></a></span>
+                            <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true"  data-cycle-fx="scrollHorz"
+                             data-cycle-next="#next"data-cycle-prev="#prev">
+                                <div class="slide">
+                                    <div class="slideContext">
+                                        <div class="mediaIMG"><img src="images/Review_Math.png" alt="lady"></div>
+                                        <div class="phoneIMG"><img src="images/woman.png" alt="lady"></div>
+                                        <div class="slide-text">
+                                            <p>Last year, when depression cast a dark shadow over me, I felt lost and incapable. I wanted to make a big difference in my life, to change it, to feel better. 
+                                                Then I came upon Habitomic. I thought all this time I have been looking for idealistic changes or big side of things. Then I thought maybe that’s the way: for overcoming huge obstacles, I just need to break them down to practical smaller actions.
+                                                SI still keep this routine to avoid mental disturbance. Minihabits miraculously has helped me and changed my life for the better.</br></p>
+                                        </div>
+                                        <span>— Mathieu</span>
+                                        <div class="starIcon">
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slideContext">
+                                        <div class="mediaIMG"><img src="images/Review_Math.png" alt="lady"></div>
+                                        <div class="phoneIMG"><img src="images/woman.png" alt="lady"></div>
+                                        <div class="slide-text">
+                                            <p>Last year, when depression cast a dark shadow over me, I felt lost and incapable. I wanted to make a big difference in my life, to change it, to feel better. 
+                                                Then I came upon Habitomic. I thought all this time I have been looking for idealistic changes or big side of things. Then I thought maybe that’s the way: for overcoming huge obstacles, I just need to break them down to practical smaller actions.
+                                                SI still keep this routine to avoid mental disturbance. Minihabits miraculously has helped me and changed my life for the better.</br></p>
+                                        </div>
+                                        <span>— Mathieu</span>
+                                        <div class="starIcon">
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="slide">
+                                        <div class="slideContext">
+                                            <div class="mediaIMG"><img src="images/Review_Math.png" alt="lady"></div>
+                                            <div class="phoneIMG"><img src="images/woman.png" alt="lady"></div>
+                                            <div class="slide-text">
+                                                <p>Last year, when depression cast a dark shadow over me, I felt lost and incapable. I wanted to make a big difference in my life, to change it, to feel better. 
+                                                    Then I came upon Habitomic. I thought all this time I have been looking for idealistic changes or big side of things. Then I thought maybe that’s the way: for overcoming huge obstacles, I just need to break them down to practical smaller actions.
+                                                    SI still keep this routine to avoid mental disturbance. Minihabits miraculously has helped me and changed my life for the better.</br></p>
+                                            </div>
+                                            <span>— Mathieu</span>
+                                            <div class="starIcon">
+                                                <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                                <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                                <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                                <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                                <i class="material-icons" style="font-size:22px;color:#f2b01e">star</i>
+                                            </div>
+                                        </div>
+                                </div>
+    
+                            </div>
+                            
+			                 <span class="cycle-next"><a href=# id=next><i class="material-icons" style="font-size:60px">chevron_right</i></a></span>
+            </div>
+            <div class="subscribtionArea">
+                <img src="images/news.png">
+                <div class="subContext">
+                    <div class="subTitle">Subscribe To Newsletter</div>
+                    <div class="subText">Newsletters make it easy to keep in touch</div>
+                </div>
+                <div class="subInput">
+                    <img src="images/home-email-placeholder.png">
+                    <form>
+                        <input id="email" type="email" placeholder="             Enter Your Email Here..." name="Email"readonly="readonly">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+
+            </div> 
+
+            <div class="forthScope">
+                <div class="fSHeader">Blog</div>
+                    <div class="fSContext">
+                        <div class="fSColumn1">                    
+                                <div class="fSItem1">
+                                <img src="images/PR-51-HA-1-150x150.png" alt="Office-man">
+                                <div class="fullSizeImg"><img src="images/PR-51-HA-1.png" alt="Office-man"></div>
+                                <div class="itemContext">
+                                    <div class="itemHeader">Embracing Proactivity: A Lesson from Sam’s Success</div>
+                                    <div class="itemDate">8 Jun 2023</div>
+                                    <div class="itemDescription"> Do you know that one person who always seems to</div>
+                                    <div class="itemCTA"><a href="https://habitomic.com/blog/embracing-proactivity-a-lesson-from-sams-success/">Read more</a></div>
+                                </div>
+                            </div>
+                            <div class="fSItem1">
+                                <img src="images/How-to-be-more-proactive_-150x150.png" alt="busy-lady">
+                                <div class="fullSizeImg"><img src="images/How-to-be-more-proactive_.png" alt="busy-lady"></div>
+                                <div class="itemContext">
+                                    <div class="itemHeader">The magic of being proactive in life</div>
+                                    <div class="itemDate">5 Jun 2023</div>
+                                    <div class="itemDescription"> In today`s fast-paced world, being proactive is more important than</div>
+                                    <div class="itemCTA"><a href="https://habitomic.com/blog/the-magic-of-being-proactive-in-life/">Read more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fSColumn2">   
+                            <div class="fSItem2">
+                                <img src="images/The-connection-between-mindset-and-habit-creation-including-the-role-of-self-talk-and-visualization.png" alt="thoughts">
+                                <div class="itemHeader">Physical and mental health connection</div>
+                                <div class="itemDate">29 May 2023</div>
+                                <div class="itemDescription"> The connection between mental health and physical health is a</div>
+                                <div class="itemCTA"><a href="https://habitomic.com/blog/physical-and-mental-health-connection/">Read more</a></div>
+                            </div>
+                            <div class="fSItem2">
+                                <img src="images/The-benefits-of-taking-breaks-to-boost-productivity.png" alt="notebook">
+                                <div class="itemHeader">Taking breaks to boost productivity</div>
+                                <div class="itemDate">26 May 2023</div>
+                                <div class="itemDescription"> One of the most effective ways to maintain focus and</div>
+                                <div class="itemCTA"><a href="https://habitomic.com/blog/taking-breaks-to-boost-productivity/">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="footerScope">
+                Looking for more articles?<a href="https://habitomic.com/blog/">See More</a> 
+            </div>
+            <div class="footerArea">
+                <ul>
+                    <li>
+                       <a href="https://habitomic.com/features">Features</a>
+                    </li>
+                    <li>
+                      <a href="https://habitomic.com/privacy-policy/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://habitomic.com/term-of-use/">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="https://habitomic.com/contact-us/">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://habitomic.com/faq/">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <p>© 2023, Habitomic Coach Inc. All rights reserved.</p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/thehabitomic"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3.66667 0C1.65348 0 0 1.65348 0 3.66667V20.3333C0 22.3465 1.65348 24 3.66667 24H20.3333C22.3465 24 24 22.3465 24 20.3333V3.66667C24 1.65348 22.3465 0 20.3333 0H3.66667ZM3.66667 2H20.3333C21.2655 2 22 2.73452 22 3.66667V20.3333C22 21.2655 21.2655 22 20.3333 22H16V15.3333H18.4167C18.7527 15.3333 19.0368 15.082 19.0781 14.7487L19.3281 12.7487C19.3521 12.5594 19.292 12.3693 19.1654 12.2253C19.0394 12.0819 18.858 12 18.6667 12H16V9.66667C16 8.93133 16.598 8.33333 17.3333 8.33333H18.6667C19.0347 8.33333 19.3333 8.03533 19.3333 7.66667V5.41667C19.3333 5.07133 19.0699 4.78327 18.7266 4.7526C18.6872 4.74927 17.7467 4.66667 16.556 4.66667C13.618 4.66667 12 6.41079 12 9.57812V12H9.33333C8.96533 12 8.66667 12.298 8.66667 12.6667V14.6667C8.66667 15.0353 8.96533 15.3333 9.33333 15.3333H12V22H3.66667C2.73452 22 2 21.2655 2 20.3333V3.66667C2 2.73452 2.73452 2 3.66667 2Z" fill="#EBF3F5"></path></svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/habitomic/"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M7.99992 0.333252C3.77751 0.333252 0.333252 3.77751 0.333252 7.99992V17.9999C0.333252 22.2218 3.77739 25.6666 7.99992 25.6666H17.9999C22.2219 25.6666 25.6666 22.2219 25.6666 17.9999V7.99992C25.6666 3.77739 22.2218 0.333252 17.9999 0.333252H7.99992ZM7.99992 2.33325H17.9999C21.1407 2.33325 23.6666 4.85845 23.6666 7.99992V17.9999C23.6666 21.1406 21.1406 23.6666 17.9999 23.6666H7.99992C4.85845 23.6666 2.33325 21.1407 2.33325 17.9999V7.99992C2.33325 4.85833 4.85833 2.33325 7.99992 2.33325ZM19.6666 4.99992C18.9299 4.99992 18.3333 5.59658 18.3333 6.33325C18.3333 7.06992 18.9299 7.66658 19.6666 7.66658C20.4033 7.66658 20.9999 7.06992 20.9999 6.33325C20.9999 5.59658 20.4033 4.99992 19.6666 4.99992ZM12.9999 6.33325C9.33004 6.33325 6.33325 9.33004 6.33325 12.9999C6.33325 16.6698 9.33004 19.6666 12.9999 19.6666C16.6698 19.6666 19.6666 16.6698 19.6666 12.9999C19.6666 9.33004 16.6698 6.33325 12.9999 6.33325ZM12.9999 8.33325C15.5887 8.33325 17.6666 10.4111 17.6666 12.9999C17.6666 15.5887 15.5887 17.6666 12.9999 17.6666C10.4111 17.6666 8.33325 15.5887 8.33325 12.9999C8.33325 10.4111 10.4111 8.33325 12.9999 8.33325Z" fill="#EBF3F5"></path></svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/habitomic/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3.66667 0C1.65348 0 0 1.65348 0 3.66667V20.3333C0 22.3465 1.65348 24 3.66667 24H20.3333C22.3465 24 24 22.3465 24 20.3333V3.66667C24 1.65348 22.3465 0 20.3333 0H3.66667ZM3.66667 2H20.3333C21.2655 2 22 2.73452 22 3.66667V20.3333C22 21.2655 21.2655 22 20.3333 22H3.66667C2.73452 22 2 21.2655 2 20.3333V3.66667C2 2.73452 2.73452 2 3.66667 2ZM6.33333 4.66667C5.89131 4.66667 5.46738 4.84226 5.15482 5.15482C4.84226 5.46738 4.66667 5.89131 4.66667 6.33333C4.66667 6.77536 4.84226 7.19928 5.15482 7.51184C5.46738 7.82441 5.89131 8 6.33333 8C6.77536 8 7.19928 7.82441 7.51184 7.51184C7.82441 7.19928 8 6.77536 8 6.33333C8 5.89131 7.82441 5.46738 7.51184 5.15482C7.19928 4.84226 6.77536 4.66667 6.33333 4.66667ZM5.33333 9.33333C4.96467 9.33333 4.66667 9.63133 4.66667 10V18.6667C4.66667 19.0353 4.96467 19.3333 5.33333 19.3333H7.33333C7.702 19.3333 8 19.0353 8 18.6667V10C8 9.63133 7.702 9.33333 7.33333 9.33333H5.33333ZM10 9.33333C9.63133 9.33333 9.33333 9.63133 9.33333 10V18.6667C9.33333 19.0353 9.63133 19.3333 10 19.3333H12C12.3687 19.3333 12.6667 19.0353 12.6667 18.6667V13.6667C12.6667 12.7473 13.414 12 14.3333 12C15.2527 12 16 12.7473 16 13.6667V18.6667C16 19.0353 16.298 19.3333 16.6667 19.3333H18.6667C19.0353 19.3333 19.3333 19.0353 19.3333 18.6667V13.3333C19.3333 11.1273 17.5393 9.33333 15.3333 9.33333C14.308 9.33333 13.3753 9.72401 12.6667 10.3607V10C12.6667 9.63133 12.3687 9.33333 12 9.33333H10Z" fill="#EBF3F5"></path></svg></a>
+                    </li>
+
+                </ul>
+            </footer>
+        </div>                          
+    </body>
+</html>
