@@ -9,7 +9,7 @@ body{
     font-family: 'Poppins';font-size: 16px;
     margin: 0px;
 }
-@media screen and (max-width: 1007px){
+@media screen and (max-width: 1024px){
   body{
   overflow-x: hidden;
   }
@@ -98,7 +98,7 @@ body{
 
 
       /*Screen Tablet*/
-      @media screen and (max-width: 1022px){
+      @media screen and (max-width: 1024px){
         header ul{
           height: 120px;
           width: 96%;
@@ -141,87 +141,92 @@ body{
 
 
 
-            /*Screen Phone*/
-      @media screen and (max-width: 768px){
-        body {
-          background-size: auto;
-      }
-      header{
-        display: none;
-      }
-      nav {
-        display:flex;
-        background-color:white ;
-        position: relative;
-        top: -25px;
-        padding: 15px 0px;
-      }
-      nav img{
-        width: 77px;
-        margin: 30px 0px 0px 30px;
-      }
-      nav ul{
-        position: absolute;
-        top: 140px;
-        width: 100%;
-        border-radius: 0px 0px 25px 25px;
-        background-color:white ;
-        list-style: none;
-        padding-left: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-block-start:0em;
-        margin-block-end: 0em;
-        max-height: 0px;
-        overflow: hidden;
-        transition:max-height .4s ease;
-      }
-      nav li{
-        margin: 0px 0px 25px 0px;
-      }
-      nav a{
-        text-decoration: none;
-        color:#3B5B6A;
-        display: block;
+                              /*Screen Phone*/
+                        @media screen and (max-width: 768px){
+                          body {
+                            background-size: auto;
+                        }
+                        header{
+                          display: none;
+                        }
+                        nav {
+                          display:flex;
+                          background-color:white ;
+                          position: relative;
+                          width: 100%;
+                          top: -25px;
+                          padding: 15px 0px;
+                        }
+                        nav img{
+                          width: 77px;
+                          margin: 30px 0px 0px 30px;
+                        }
+                        nav ul{
+                          position: absolute;
+                          top: 140px;
+                          width: 100%;
+                          border-radius: 0px 0px 25px 25px;
+                          background-color:white ;
+                          list-style: none;
+                          padding-left: 20px;
+                          display: flex;
+                          flex-direction: column;
+                          margin-block-start:0em;
+                          margin-block-end: 0em;
+                          max-height: 0px;
+                          overflow: hidden;
+                          transition:max-height .4s ease;
+                        }
+                        nav li{
+                          margin: 0px 0px 25px 0px;
+                        }
+                        nav a{
+                          text-decoration: none;
+                          color:#3B5B6A;
+                          display: block;
 
-      }
-      nav li a:hover {
-        color: #17d789;
-      }
-      nav li span a{
-        color: #17d789;
-    }
-      .logo{
-        margin-bottom: 0px;
-      }
-      .bars{
-        display: inline-block;
-        cursor: pointer;
-      }
-      .bar1, .bar2, .bar3 {
-        width: 17.5px;
-        height: 2.1px;
-        background-color: #3B5B6A;
-        margin: 3px 0;
-        transition: 0.4s;
-      }
-      .change .bar1 {
-        transform: translate(0, 7px) rotate(-45deg);
-      }
-      .change .bar2 {opacity: 0;}
-      .change .bar3 {
-        transform: translate(0, -4px) rotate(45deg);
-      }
-      .toggle{
-        order:1;
-        position: absolute;
-        right: 0px;
-        padding: 60px 40px 0px;
-      }
-      nav ul.active{
-        max-height: 500px;
-      }
-    }
+                        }
+                        nav li a:hover {
+                          color: #17d789;
+                        }
+                        nav li span a{
+                          color: #17d789;
+                      }
+                        .logo{
+                          margin-bottom: 0px;
+                        }
+                        .bars{
+                          display: inline-block;
+                          cursor: pointer;
+                        }
+                        .bar1, .bar2, .bar3 {
+                          width: 17.5px;
+                          height: 2.1px;
+                          background-color: #3B5B6A;
+                          margin: 3px 0;
+                          transition: 0.4s ease;
+                        }
+                        .change .bar1 {
+                          transform: translate(0, 7px) rotate(-45deg);
+                          background-color: #17d789;
+                        }
+                        
+                        .change .bar2 {opacity: 0;}
+                        
+                        .change .bar3 {
+                          transform: translate(0, -3px) rotate(45deg);
+                          background-color: #17d789;
+                        }
+                        .menu{
+                          order:1;
+                          position: absolute;
+                          right: 0px;
+                          padding: 60px 40px 0px;
+                        }
+                        nav ul.active{
+                          max-height: 500px;
+                        }
+                      }
       /*Main Scope*/
 .mainBanner{
   display: flex;
@@ -279,7 +284,7 @@ float: left;
 }
 
       /*Screen Tablet*/
-@media screen and (max-width:1022px){
+@media screen and (max-width:1024px){
   .mainBanner{
     display: flex;
     width: 95%;
@@ -331,14 +336,30 @@ float: left;
 
           /*Screen Phone*/
           @media screen and (max-width: 768px){
+            .mainBanner{
+              width: 95%;
+              align-items: center;
+              flex-direction: column;
+              margin: 0px auto;
+              flex-wrap: nowrap;
+              justify-content: flex-end;
+              text-align: center;
+            }
             .mockupBanner{
               display: none;
             }
             .textBanner{
-              margin: 0px 20px 0px 0px;
-              max-width: 420px;
-              display: block;
+              margin: 0px 0px 0px 0px;
               text-align: center;
+            }
+            .textBanner h2{
+              font-family: 'Karla', sans-serif;
+              color: #3B5B6A;
+              font-size: 48px;
+              font-weight: 900;
+              line-height: 58px;
+              overflow: visible;
+              white-space:normal;
             }
             .ctaText{
               text-align: center;
@@ -346,10 +367,12 @@ float: left;
               margin-top: -20px;
             }
             .ctaLinks{
-              max-width: 360px;
-              margin: 0 auto;
+              width: 100%;
+              margin: 0px auto;
               display: flex;
-              justify-content: space-evenly;
+              gap: 10px;
+              flex-wrap: wrap;
+              justify-content: center;
             }
             .ctaLinks a{
               margin-left: 0px;
@@ -398,7 +421,7 @@ float: left;
 
 
       /*Screen Tablet*/
-@media screen and (max-width: 1022px){
+@media screen and (max-width: 1024px){
   .secondScope{
     width: 980px;
   }
@@ -433,15 +456,17 @@ float: left;
           /*Screen Phone*/
           @media screen and (max-width: 768px){
             .secondScope{
-              max-width: 420px;
+              width: 100%;
               margin-top: 100px;
+              text-align: center;
             }
             .sSContext{
               display: flex;
               flex-direction: column;
+              width: 100%;
             }
             .sSFeature{
-              width: 480px;
+              width: 100%;
               margin-right: 0px;
               margin-left: 0px;
           }
@@ -493,7 +518,7 @@ float: left;
 
 
       /*Screen Tablet*/
-@media screen and (max-width: 1022px){
+@media screen and (max-width: 1024px){
 
   .thirdScope{
     width: 95%;
@@ -508,7 +533,7 @@ float: left;
           @media screen and (max-width: 768px){
             .thirdScope{
               margin-top: 120px;
-              width: 420px;
+              width: 100%;
               display: flex;
               flex-direction: column;
             }
@@ -526,6 +551,9 @@ float: left;
             }
             .tSImageBg {
               left: -35px;
+            }
+            .tSDescription {
+              width: 90%;
             }
           }
 
@@ -605,7 +633,7 @@ float: left;
 
 
                   /*Screen Tablet*/
-            @media screen and (max-width: 1022px){
+            @media screen and (max-width: 1024px){
               .Slideshow{
                 width: 770px;
                 margin: auto ;
@@ -693,13 +721,13 @@ float: left;
                 font-style: italic;
               }
               .cycle-slideshow{
-                height: 380px;
+                /* height: 380px; */
                 width: 100%;
                 margin: auto;
               }
               .slide {
                 background-color:#D5D9E7;
-                height: 380px;
+                height: 100%;
                 width: 100%;
                 border-radius: 12px;
               }
@@ -790,7 +818,7 @@ float: left;
 
 
       /*Screen Tablet*/
-            @media screen and (max-width: 1022px){
+            @media screen and (max-width: 1024px){
               .subscribtionArea{
                 width: 95%;
               }
@@ -824,6 +852,7 @@ float: left;
                 border-radius: 0px;
                 height: 250px ;
                 position: relative;
+                text-align: center;
               }
               .subContext{
                 display: flex;
@@ -832,6 +861,23 @@ float: left;
               .subInput{
                 display: flex;
                 margin:20px auto;
+                width: 100%;
+              }
+              .subInput form{
+                width: 100%;
+                display: flex;
+              }
+              .subInput input[type ="email"]{
+                width: 80%;
+                margin: auto;
+              }
+              .subInput img{
+                top: 26%;
+                left: 13%;
+              }
+              .subInput input[type ="submit"]{
+                right: 11%;
+                width: 23%;
               }
               }
             
@@ -923,7 +969,7 @@ float: left;
 
 
       /*Screen Tablet*/
-@media screen and (max-width: 1022px){
+@media screen and (max-width: 1024px){
   .forthScope{
     width: 95%;
     margin:8% auto ;
@@ -986,7 +1032,7 @@ margin-bottom: 40px;
             /*Screen Phone*/
             @media screen and (max-width: 768px){
               .forthScope{
-                width: 80%;
+                width: 100%;
                 margin:8% auto ;
               }
               .fSContext{
@@ -995,16 +1041,32 @@ margin-bottom: 40px;
               .fSColumn1{
                 display: flex;
                 flex-direction: column;
-                width: min-content;
+                gap: 10px;
+                width: 90%;
                 margin: auto ;
                 align-items: flex-start;
               }
               .fSColumn2{
                 display: flex;
                 flex-direction: column;
-                width: max-content;
-                width: max-content;
+
+                width: 90%;
                 margin: auto
+              }
+              .fullSizeImg {
+                width: 100%;
+              }
+              .fullSizeImg img {
+                width: 100%;
+              }
+              .fSItem2 img{
+                width: 100%;
+              }
+              .fSItem1{
+                gap: 10px;
+              }
+              .fSItem2{
+                gap: 10px;
               }
               }
 
@@ -1075,7 +1137,7 @@ footer p{
 
 
       /*Screen Tablet*/
-@media screen and (max-width: 1022px){
+@media screen and (max-width: 1024px){
   .footerScope{
     margin-top: -20px;
   }
