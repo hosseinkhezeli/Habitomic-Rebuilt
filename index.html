@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,9 +10,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/cycle2.js"></script>
-        <script>function myFunction(x) {x.classList.toggle("change");}</script>
+        <script>
+            function hamfunc(x) {
+              x.classList.toggle("change");
+            }
+            </script>
         <script>$(function() {
-            $(".toggle").on("click",function(){
+            $(".menu").on("click",function(){
                 if($("nav ul").hasClass("active")){
                     $("nav ul").removeClass("active");
                 }else{
@@ -21,8 +26,8 @@
         });</script>
          </script>
          <script>
-            function myFunction(x) {
-              if (x.matches) { // If media query matches
+            function myFunction(y) {
+              if (y.matches) { // If media query matches
                 $('.cycle-slideshow').cycle('pause');
                 $('.cycle-slideshow').cycle('stop');
               } else {
@@ -31,8 +36,8 @@
             }
             $('.cycle-slideshow').cycle('resume');
             var x = window.matchMedia("(max-width: 768px)")
-            myFunction(x) // Call listener function at run time
-            x.addListener(myFunction) // Attach listener function on state changes
+            myFunction(y) // Call listener function at run time
+            y.addListener(myFunction) // Attach listener function on state changes
             </script>
            </head>
     <body>
@@ -69,13 +74,12 @@
                     <a href="https://habitomic.com/features/">Features</a>
                 </li>
             </ul>
-            <div class="toggle">
-                <span class="bars"onclick="myFunction(this)">
+            <div class="menu">
+                <div class="bars" onclick="hamfunc(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                   </div>
-                  </div></span>
                 </div>
         </nav>
         <div class="mainData">
